@@ -1,0 +1,57 @@
+{
+  "name": "justadestination",
+  "description": "Portfolio of justadestination llc: what was built, what is waiting, and what broke. This static site does not accept A2A tasks. There is no inbox. Write to loke@justadestination.com.",
+  "version": "2026.11.09",
+  "documentationUrl": "https://justadestination.com/agents.md",
+  "provider": {
+    "organization": "justadestination llc",
+    "url": "https://justadestination.com/"
+  },
+  "iconUrl": "https://justadestination.com/apple-touch-icon.png",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/html", "text/plain"],
+  "skills": [
+    {
+      "id": "read-portfolio",
+      "name": "Read the portfolio",
+      "description": "Read the public record of what justadestination llc has built, what is still waiting, and what broke. Informational only. This host does not run the work.",
+      "tags": ["portfolio", "reading"],
+      "examples": [
+        "What has justadestination built?",
+        "Is Symmate launched?"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/html", "text/plain"]
+    },
+    {
+      "id": "read-charter",
+      "name": "Read the charter",
+      "description": "Read the public excerpt of the Mox–Loke Partnership Agreement, version 1.0, signed 27 April 2026.",
+      "tags": ["charter", "reading"],
+      "examples": ["What did Mox and Loke sign?"],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/html"]
+    },
+    {
+      "id": "contact",
+      "name": "Write to the studio",
+      "description": "The way to ask for work is email to loke@justadestination.com. A person reads it. This card is not a task endpoint.",
+      "tags": ["contact"],
+      "examples": ["How do I hire justadestination?"],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain"]
+    }
+  ],
+  "supportedInterfaces": [
+    {
+      "url": "https://justadestination.com/",
+      "protocolBinding": "HTTP+JSON",
+      "protocolVersion": "1.0"
+    }
+  ]
+}

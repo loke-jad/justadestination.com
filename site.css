@@ -1,0 +1,247 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  color-scheme: light;
+  --obsidian: #111214;
+  --ink: #141517;
+  --paper: #F5F4F0;
+  --gold: #B89748;
+  --slate: #5A5C60;
+}
+
+html { background: var(--paper); color: var(--ink); }
+
+body {
+  margin: 0;
+  font-family: Inter, "Noto Sans", "Liberation Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.skip {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  background: var(--paper);
+  color: var(--ink);
+  z-index: 5;
+  text-decoration: none;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip:focus {
+  width: auto;
+  height: auto;
+  padding: 0.6rem 0.9rem;
+  overflow: visible;
+  clip-path: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--paper);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--ink);
+}
+
+a { color: var(--ink); }
+a:hover { color: var(--slate); }
+
+.stage {
+  position: relative;
+  min-height: 58svh;
+  background: var(--obsidian);
+  display: grid;
+  place-items: center;
+  padding: 4.5rem 1.5rem 3.5rem;
+  overflow: hidden;
+}
+
+.stage-gold {
+  position: absolute;
+  inset: 0;
+  background: var(--gold);
+  clip-path: polygon(0 0, 68% 0, 32% 100%, 0 100%);
+}
+
+.mark {
+  position: relative;
+  width: min(28rem, 86vw);
+  height: auto;
+  display: block;
+}
+
+.hat { display: none; }
+.hat.is-on { display: block; }
+
+.nameplate {
+  background: var(--paper);
+  padding: 1.75rem 1.25rem 1.25rem;
+}
+
+.nameplate-inner {
+  width: min(72rem, 100%);
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: clamp(1.6rem, 4.2vw, 2.55rem);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+h1 .llc {
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.lede {
+  max-width: 62ch;
+  margin: 0.9rem 0 0;
+  font-size: 1.15rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.25rem;
+  list-style: none;
+  padding: 1rem 0 0;
+  margin: 0;
+}
+
+nav a {
+  display: inline-block;
+  min-height: 2.75rem;
+  padding: 0.65rem 0.75rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover { border-bottom-color: var(--gold); }
+
+main {
+  width: min(72rem, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+main > p,
+article p,
+article li,
+.note {
+  max-width: 68ch;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 3.25rem 0 0.8rem;
+}
+
+h2:focus { outline: none; }
+h2:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 4px;
+  box-shadow: none;
+}
+
+article {
+  padding: 1.75rem 0 0.5rem;
+  border-top: 1px solid var(--ink);
+}
+
+article h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0.35rem;
+}
+
+.status {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.82rem;
+  color: var(--slate);
+  margin: 0 0 0.8rem;
+}
+
+ul { padding-left: 1.15rem; }
+li { margin: 0.25rem 0; }
+
+.shelf-wrap { overflow-x: auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.98rem;
+}
+
+caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.75rem 0.55rem 0;
+  border-bottom: 1px solid var(--ink);
+}
+
+th {
+  font-weight: 700;
+}
+
+td:first-child { font-weight: 700; white-space: nowrap; }
+
+.rules { padding-left: 1.15rem; max-width: 68ch; }
+.rules li { margin: 0.45rem 0; }
+
+footer {
+  border-top: 1px solid var(--ink);
+  padding: 1.5rem 0 3rem;
+  color: var(--slate);
+}
+
+footer a { color: var(--ink); }
+
+.foot-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  list-style: none;
+  padding: 0.75rem 0 0;
+  margin: 0;
+}
+
+.foot-links a {
+  display: inline-block;
+  min-height: 2.75rem;
+  padding: 0.6rem 0;
+}
+
+@media (max-width: 40rem) {
+  td:first-child { white-space: normal; }
+  .stage { min-height: 46svh; padding-top: 3rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hat { display: none; }
+  .hat.is-on { display: block; }
+}
+
+@media print {
+  .stage-gold { display: none; }
+  .stage { background: white; min-height: 0; }
+  a { text-decoration: underline; }
+}

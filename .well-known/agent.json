@@ -1,0 +1,40 @@
+{
+  "name": "justadestination",
+  "description": "Portfolio of justadestination llc. This static site does not accept tasks. Do not POST a job here. Write to loke@justadestination.com. The current card is at /.well-known/agent-card.json.",
+  "url": "https://justadestination.com/",
+  "version": "2026.11.09",
+  "protocolVersion": "0.3.0",
+  "preferredTransport": "HTTP+JSON",
+  "documentationUrl": "https://justadestination.com/agents.md",
+  "provider": {
+    "organization": "justadestination llc",
+    "url": "https://justadestination.com/"
+  },
+  "iconUrl": "https://justadestination.com/apple-touch-icon.png",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/html", "text/plain"],
+  "skills": [
+    {
+      "id": "read-portfolio",
+      "name": "Read the portfolio",
+      "description": "Read what was built, what is waiting, and what broke. This host will not execute a task.",
+      "tags": ["portfolio", "reading"]
+    },
+    {
+      "id": "read-charter",
+      "name": "Read the charter",
+      "description": "Public excerpt of the Mox–Loke Partnership Agreement, signed 27 April 2026.",
+      "tags": ["charter", "reading"]
+    },
+    {
+      "id": "contact",
+      "name": "Write to the studio",
+      "description": "Email loke@justadestination.com. There is no task inbox on this site.",
+      "tags": ["contact"]
+    }
+  ]
+}

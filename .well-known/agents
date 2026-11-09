@@ -1,0 +1,12 @@
+{
+  "updated": "2026-11-09",
+  "description": "Public agents for justadestination llc. The only entry is the portfolio. It does not accept tasks.",
+  "agents": [
+    {
+      "name": "justadestination",
+      "description": "Portfolio and public record. Read it. Do not POST a task.",
+      "url": "https://justadestination.com/",
+      "card": "https://justadestination.com/.well-known/agent-card.json"
+    }
+  ]
+}
