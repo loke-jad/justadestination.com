@@ -53,10 +53,7 @@ Ratings:
 |---|---|---|
 | Own models | Running | 30B open model on our hardware, larger model as break-glass. |
 | Pythia | Running | Calibration-first forecasts. Three voices per question. |
-| Music (ACE-Step, four setups) | Running | A couple of hundred songs. Fix problems at generation. |
 | Knowledge estate | Partial | Ontology done. Graph still being built. |
-| LOOI | Built | Bar companion. Book first, model second, a stop phrase. |
-| SquachWatch | Built | Surveillance-device detector on a small board. |
 | Iotiator | Built | Interviews devices. Tested. Not deployed. |
 | net-tracer | Built | Small mapper. Turns around at a wall. Maps stay private. |
 | brdkst | Running | The journal across the fleet. |
@@ -67,11 +64,11 @@ Ratings:
 | relax-qr | Built | Small voucher page. A side, not a pillar. |
 | SubStratOS | Design | Long spec. One audit tool. Not the running stack. |
 | SynonymOS | Design | Atlas exists. OS is a draft. |
-| A.Corn | Partial | Static delivery engine. Not a destination. |
+| A.Corn | Built | Rootless, read-only, cap-dropped Nginx node, about 7 MB. WebAuthn claim, CMS, backups, agent card, 8 test suites (`acorn/test/`). Bakes the Tacks SPA. Public host did not answer from the sandbox on 10 November 2026. |
+| TacksForSnacks | Built | Encrypted image vault with EXIF scrub in the browser, Matrix room, TackBot admin bot. One-command Docker deploy, JSON backup and restore (`tacksforsnacks/DEPLOYMENT.md`). No public address. |
 | Mirror World | Partial | Local city surface tied to the downtown model. Easy to oversell. |
 | infer-ops | Partial | Agent for our own inference proxy. |
 | cohort-autonomy | Retired with the crew | Spine was verified in July. The large crew was retired in October. |
-| ACE-Step DAW | Partial | Music workstation on the other machine’s home disk. |
 | computer-use-linux | Partial | Desktop control from an agent host. On that home disk. |
 
 ## Sketch, or a name only

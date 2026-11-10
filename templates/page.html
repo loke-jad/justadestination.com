@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{name}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="{{domain}}/">
+  <meta name="theme-color" content="{{theme_color}}">
+  <meta property="og:title" content="{{name}}">
+  <meta property="og:description" content="{{tagline}}. What is live, what is in the works, and how we work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{domain}}/">
+  <meta property="og:image" content="{{domain}}/icon-1024.png">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/site.css">
+  <link rel="alternate" type="application/ld+json" href="/portfolio.jsonld" title="Portfolio as linked data">
+  <link rel="alternate" type="text/turtle" href="/portfolio.ttl" title="Portfolio as DOAP">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="author" href="/humans.txt">
+  <script type="application/ld+json">
+{{jsonld}}
+  </script>
+</head>
+<body class="h-card">
+  <a class="skip" href="#live">Skip to the work</a>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <!-- The mark: j and d with a canopy. Leaves grow from the top of both stems, once, on load. -->
+      <svg class="mark" viewBox="130 -62 420 372" role="img" aria-label="justadestination llc monogram: an interlocking j and d with a canopy of leaves">
+        <defs>
+          <mask id="jd-lockup-mask">
+            <rect x="0" y="-100" width="640" height="600" fill="white"/>
+            <path d="M 256 68 L 256 196 A 92 92 0 0 1 164 288" fill="none" stroke="black" stroke-width="50" stroke-linecap="butt"/>
+          </mask>
+        </defs>
+        <g class="canopy" aria-hidden="true">
+          <path class="branch" d="M 256 72 C 250 42, 264 20, 302 -4"/>
+          <path class="branch" d="M 256 72 C 240 54, 216 42, 194 46"/>
+          <path class="branch" d="M 417 72 C 421 42, 406 18, 370 -6"/>
+          <path class="branch" d="M 417 72 C 434 54, 458 40, 482 46"/>
+          <g transform="translate(272,38) rotate(-42)"><path class="leaf" d="M -17 0 C -9 -10, 9 -10, 17 0 C 9 10, -9 10, -17 0 Z" style="--i:0"/></g>
+          <g transform="translate(228,46) rotate(-10)"><path class="leaf" d="M -17 0 C -9 -10, 9 -10, 17 0 C 9 10, -9 10, -17 0 Z" style="--i:1"/></g>
+          <g transform="translate(402,36) rotate(42)"><path class="leaf" d="M -17 0 C -9 -10, 9 -10, 17 0 C 9 10, -9 10, -17 0 Z" style="--i:2"/></g>
+          <g transform="translate(446,46) rotate(12)"><path class="leaf" d="M -17 0 C -9 -10, 9 -10, 17 0 C 9 10, -9 10, -17 0 Z" style="--i:3"/></g>
+          <g transform="translate(290,10) rotate(-24)"><path class="leaf" d="M -17 0 C -9 -10, 9 -10, 17 0 C 9 10, -9 10, -17 0 Z" style="--i:4"/></g>
+          <g transform="translate(198,32) rotate(26)"><path class="leaf" d="M -17 0 C -9 -10, 9 -10, 17 0 C 9 10, -9 10, -17 0 Z" style="--i:5"/></g>
+          <g transform="translate(384,8) rotate(24)"><path class="leaf" d="M -17 0 C -9 -10, 9 -10, 17 0 C 9 10, -9 10, -17 0 Z" style="--i:6"/></g>
+          <g transform="translate(480,32) rotate(-26)"><path class="leaf" d="M -17 0 C -9 -10, 9 -10, 17 0 C 9 10, -9 10, -17 0 Z" style="--i:7"/></g>
+          <g transform="translate(312,-10) rotate(8)"><path class="leaf" d="M -17 0 C -9 -10, 9 -10, 17 0 C 9 10, -9 10, -17 0 Z" style="--i:8"/></g>
+          <g transform="translate(360,-12) rotate(-8)"><path class="leaf" d="M -17 0 C -9 -10, 9 -10, 17 0 C 9 10, -9 10, -17 0 Z" style="--i:9"/></g>
+          <g transform="translate(336,-30) rotate(-2)"><path class="leaf gold" d="M -17 0 C -9 -10, 9 -10, 17 0 C 9 10, -9 10, -17 0 Z" style="--i:10"/></g>
+        </g>
+        <g mask="url(#jd-lockup-mask)">
+          <circle cx="344" cy="196" r="73" fill="none" stroke="var(--mark-d)" stroke-width="34"/>
+          <path d="M 417 68 L 417 196 A 92 92 0 0 0 509 288" fill="none" stroke="var(--mark-d)" stroke-width="34" stroke-linecap="butt"/>
+        </g>
+        <path d="M 256 68 L 256 196 A 92 92 0 0 1 164 288" fill="none" stroke="var(--mark-j)" stroke-width="34" stroke-linecap="butt"/>
+      </svg>
+      <div class="nameplate">
+        <h1 id="content" class="p-name p-org" tabindex="-1"><span class="jd">justadestination</span><span class="llc"> llc</span></h1>
+        <p class="tagline">{{tagline}}</p>
+        <p class="lede p-note">{{lede}}</p>
+        <data class="u-logo" value="/icon-1024.png"></data>
+        <data class="p-locality" value="Sonoma County"></data>
+        <data class="p-region" value="California"></data>
+        <nav aria-label="On this page">
+          <ul>
+{{nav}}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="content">
+{{intro}}
+    </section>
+
+{{sections}}
+
+    <section class="door" id="door" aria-labelledby="door-title">
+      <h2 id="door-title" tabindex="-1">{{door_title}}</h2>
+{{door_text}}
+      <a class="mail u-email" rel="me" href="mailto:{{email}}">{{email}}</a>
+    </section>
+
+    <footer>
+      <p>{{footer}}</p>
+      <ul class="foot-links">
+{{footer_links}}
+      </ul>
+    </footer>
+  </main>
+</body>
+</html>

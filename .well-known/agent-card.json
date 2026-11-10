@@ -1,7 +1,7 @@
 {
   "name": "justadestination",
-  "description": "Portfolio of justadestination llc: what was built, what is waiting, and what broke. This static site does not accept A2A tasks. There is no inbox. Write to loke@justadestination.com.",
-  "version": "2026.11.09",
+  "description": "Portfolio of justadestination llc: a small studio in Sonoma County that builds software with a crew of AI agents on hardware it runs itself. What is live, what is in the works, and how we work. This static site does not accept A2A tasks. There is no inbox. Write to loke@justadestination.com.",
+  "version": "2026.11.10",
   "documentationUrl": "https://justadestination.com/agents.md",
   "provider": {
     "organization": "justadestination llc",
@@ -19,7 +19,7 @@
     {
       "id": "read-portfolio",
       "name": "Read the portfolio",
-      "description": "Read the public record of what justadestination llc has built, what is still waiting, and what broke. Informational only. This host does not run the work.",
+      "description": "Read the public record of what justadestination llc has built, what is live, and what is in the works. Informational only. This host does not run the work.",
       "tags": ["portfolio", "reading"],
       "examples": [
         "What has justadestination built?",

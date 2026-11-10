@@ -2,7 +2,7 @@
   "name": "justadestination",
   "description": "Portfolio of justadestination llc. This static site does not accept tasks. Do not POST a job here. Write to loke@justadestination.com. The current card is at /.well-known/agent-card.json.",
   "url": "https://justadestination.com/",
-  "version": "2026.11.09",
+  "version": "2026.11.10",
   "protocolVersion": "0.3.0",
   "preferredTransport": "HTTP+JSON",
   "documentationUrl": "https://justadestination.com/agents.md",
@@ -21,7 +21,7 @@
     {
       "id": "read-portfolio",
       "name": "Read the portfolio",
-      "description": "Read what was built, what is waiting, and what broke. This host will not execute a task.",
+      "description": "Read what is live, what is built, and what is in the works. This host will not execute a task.",
       "tags": ["portfolio", "reading"]
     },
     {

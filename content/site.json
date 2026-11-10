@@ -1,0 +1,54 @@
+{
+  "name": "justadestination llc",
+  "domain": "https://justadestination.com",
+  "tagline": "AI, agents, automations, and, alliterations",
+  "lede": "A small studio in Sonoma County. Loke, a crew of AI agents, and hardware we run ourselves. We build useful software for people, for small businesses, and for the agents that work alongside them.",
+  "description": "justadestination llc is a small studio in Sonoma County that builds software with a crew of AI agents on hardware it runs itself. NightCal, ChorHaus, Symmate, Webcraft, A.Corn, Mox-Framework, and the charter that comes first.",
+  "email": "loke@justadestination.com",
+  "theme_color": "#1C2A2E",
+  "github": "https://github.com/loke-jad",
+  "person": {"name": "Loke", "same_as": ["https://github.com/loke-jad"]},
+  "knows_about": ["AI agents", "automation", "self-hosted inference", "web applications", "embedded devices"],
+  "did": {
+    "id": "did:web:justadestination.com",
+    "public_key_multibase": "z6Mktm9M7v24NkNyfRjQ7uMxQLLbqsxx8P4Kh5YcL1TYw5mc",
+    "private_key_note": "Ed25519 private key is NOT in this repo. It lives in Loke's keeping; see content/README.md."
+  },
+  "nostr_pubkey_hex": "",
+  "intro": [
+    "We started from a belief, not a product: if you empower people to do good, they will do good. Everything on this page is an attempt to put that into something you can open, flash, or run.",
+    "The studio works a particular way. An agreement is written before the code. Agents do real work, and a person checks it before it counts. Models run on machines we keep in the building, so the data stays with the people it belongs to. When something goes wrong we write the rule down and keep going.",
+    "Below is the honest shape of the house as of {{today}}. Where a public address answered that day, we say so. Where something is still being built, we say that too. The longer working list, with a rating on every name, is [INVENTORY.md](/INVENTORY.md)."
+  ],
+  "sections": [
+    {"id": "live", "title": "Live now", "lede": "Things you can open in a browser today."},
+    {"id": "works", "title": "In the works", "lede": "Real code with real intent, not yet at a public address. This is most of what we are excited about."},
+    {"id": "workshop", "title": "The workshop", "lede": "Tools we built because we needed them. Several are the kind of thing we would happily build again for you.", "caption": "Built and in use on our own fleet"},
+    {"id": "how", "title": "How we work", "lede": "Three habits explain most of the house."}
+  ],
+  "door": {
+    "title": "Work with us",
+    "text": [
+      "If you need something built, this is the kind of thing we are good at: a small product end to end, an agent that does real work inside limits you can read, software that runs on hardware you keep, and the odd embedded device. We say what is live, what is built, and what is still a drawing, before you pay for any of it.",
+      "Write to Loke. A person reads it, usually the same day."
+    ]
+  },
+  "footer": "justadestination llc, Sonoma County, California. Page updated {{today}} from the project record and same-day host checks.",
+  "footer_links": [
+    {"text": "justadestination.com", "href": "https://justadestination.com/", "class": "u-url u-uid", "me": true},
+    {"text": "GitHub", "href": "https://github.com/loke-jad", "me": true},
+    {"text": "shadesr.net", "href": "https://shadesr.net"},
+    {"text": "Charter", "href": "/charter/"},
+    {"text": "Inventory", "href": "/INVENTORY.md"},
+    {"text": "agents.md", "href": "/agents.md"},
+    {"text": "Linked data", "href": "/portfolio.jsonld"},
+    {"text": "A2A card", "href": "/.well-known/agent-card.json"},
+    {"text": "DID", "href": "/.well-known/did.json"}
+  ],
+  "llms_links": [
+    {"text": "Home", "href": "https://justadestination.com/"},
+    {"text": "Charter excerpt", "href": "https://justadestination.com/charter/"},
+    {"text": "Notes for agents", "href": "https://justadestination.com/agents.md"},
+    {"text": "Working inventory", "href": "https://justadestination.com/INVENTORY.md"}
+  ]
+}

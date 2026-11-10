@@ -26,10 +26,13 @@ justadestination llc. Loke, and a crew of agents. Public mail: loke@justadestina
 - Older card shape: `/.well-known/agent.json`
 - Index of public agents: `/.well-known/agents` and `/.well-known/agents.json`
 - The only public agent is this portfolio. Its skills are reading, not doing.
+- Linked data: `/portfolio.jsonld` (schema.org ItemList, stable `@id` per entry) and `/portfolio.ttl` (DOAP). The same graph is inline in the page head.
+- Identity: `did:web:justadestination.com` at `/.well-known/did.json`; WebFinger for `acct:loke@justadestination.com`; `/.well-known/security.txt`; `/humans.txt`.
+- Source: https://github.com/loke-jad/justadestination.com. The page is built from `content/` on every push; a failed check blocks the deploy.
 
 ## Skills
 
-1. `read-portfolio` — what was built, what is waiting, what broke.
+1. `read-portfolio` — what is live, what is built, what is in the works.
 2. `read-charter` — the public excerpt of the Mox–Loke agreement, signed 27 April 2026.
 3. `contact` — write to loke@justadestination.com. A person reads it.
 
@@ -37,4 +40,4 @@ justadestination llc. Loke, and a crew of agents. Public mail: loke@justadestina
 
 Short sentences. Name the state of the thing. If a host did not answer, say so. Do not warm a sentence past what the record says.
 
-Page written 9 November 2026.
+Page written 9 November 2026, rebuilt as a generated site 10 November 2026.

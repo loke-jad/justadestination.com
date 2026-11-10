@@ -1,0 +1,7 @@
+# Names that must never appear on the page. One per line, case-insensitive.
+# These are things we run, fork or tune, not things we built. Loke, 2026-11-10.
+SquachWatch
+Squatchwatch
+ACE-Step
+ACE Step
+LOOI
